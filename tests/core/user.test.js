@@ -1,5 +1,5 @@
-// deno-lint-ignore-file
-const dbHandler = require('../../models/DbHandler');
+
+const dbHandler = require('../../models/InMemoryDbHandler');
 const user = require('../../core/user');
 const test_data = require('./user.testdata')
 

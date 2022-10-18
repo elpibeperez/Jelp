@@ -1,4 +1,3 @@
-// deno-lint-ignore-file
 const dbHandler = require('../../models/InMemoryDbHandler');
 const store = require('../../core/store');
 const user = require('../../core/user');
