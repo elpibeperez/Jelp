@@ -1,5 +1,5 @@
 // deno-lint-ignore-file
-const dbHandler = require('../../models/DbHandler');
+const dbHandler = require('../../models/InMemoryDbHandler');
 const store = require('../../core/store');
 const user = require('../../core/user');
 const test_data = require('./store.testdata');
@@ -151,6 +151,4 @@ describe('Store ', () => {
             expect(store.is_manager(updated_store, other_user['_id'])).toBeTruthy();
         }
     );
-
-
 });
