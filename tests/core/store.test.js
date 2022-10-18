@@ -61,7 +61,7 @@ describe('Store ', () => {
         }
     );
     
-    it('can be patched with an owner', 
+    it('can be patched with a manager', 
         async () => {
             const {owner, new_store} = await create_owner_and_store();
             expect(new_store).toBeTruthy();
@@ -73,7 +73,7 @@ describe('Store ', () => {
         }
     );
 
-    it('can\'t be patched with a user that is not an owner', 
+    it('can\'t be patched with a user that is not a manager', 
         async () => {
             const {owner, new_store} = await create_owner_and_store();
             expect(new_store).toBeTruthy();
@@ -89,7 +89,7 @@ describe('Store ', () => {
         }
     );
 
-    it('can be tagged by the owner', 
+    it('can be tagged by a manager', 
         async () => {
             const {owner, new_store} = await create_owner_and_store();
             expect(new_store).toBeTruthy();
@@ -102,7 +102,7 @@ describe('Store ', () => {
         }
     );
 
-    it('can\'t be tagged with a user that is not an owner', 
+    it('can\'t be tagged with a user that is not a manager', 
         async () => {
             const {owner, new_store} = await create_owner_and_store();
             expect(new_store).toBeTruthy();
@@ -116,4 +116,41 @@ describe('Store ', () => {
             }
         }
     );
+
+    it('can add a new photo if is a manager', 
+        async () => {
+            const {owner, new_store} = await create_owner_and_store();
+            expect(new_store).toBeTruthy();
+            const new_photo = 'https://some.img/in/some/path.jpg'
+            await store.add_picture(new_store['_id'], owner['_id'], new_photo);
+            store_with_photo = await store.get_by_id(new_store['_id']);
+            expect(store_with_photo.pictures).toBeTruthy();
+            expect(store_with_photo.pictures.length).toBe(1);
+        }
+    );
+
+    it('can validate if a user is a manager', 
+        async () => {
+            const {owner, new_store} = await create_owner_and_store();
+            expect(new_store).toBeTruthy();
+            expect(store.is_manager(new_store, owner['_id'])).toBeTruthy();
+            const other_user = await create_user_two();
+            expect(store.is_manager(new_store, other_user['_id'])).toBeFalsy();
+        }
+    );
+
+    it('can add a user as manager by a manager', 
+        async () => {
+            const {owner, new_store} = await create_owner_and_store();
+            expect(new_store).toBeTruthy();
+            expect(store.is_manager(new_store, owner['_id'])).toBeTruthy();
+            const other_user = await create_user_two();
+            expect(store.is_manager(new_store, other_user['_id'])).toBeFalsy();
+            await store.add_manager(new_store['_id'], owner['_id'], other_user['_id']);
+            const updated_store = await store.get_by_id(new_store['_id']);
+            expect(store.is_manager(updated_store, other_user['_id'])).toBeTruthy();
+        }
+    );
+
+
 });

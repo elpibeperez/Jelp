@@ -35,8 +35,7 @@ const get_by_name = async (name) => {
 // patch store
 const patch = async (store_id, user_id, store_values) => {
     const store = await get_by_id(store_id);
-    const is_a_manager = store.managers.filter( valid_manager => valid_manager == user_id.toString()).length
-    if (is_a_manager) {
+    if (is_manager(store, user_id)) {
         await stores_model.findByIdAndUpdate(store_id, store_values);    
     } else {
         throw new Error('User is not a manager'); 
@@ -45,8 +44,7 @@ const patch = async (store_id, user_id, store_values) => {
 
 const tag = async (store_id, user_id, tags) => {
     const store = await get_by_id(store_id);
-    const is_a_manager = store.managers.filter( valid_manager => valid_manager == user_id.toString()).length
-    if (is_a_manager) {
+    if (is_manager(store, user_id)) {
         store.tags.push(tags);
         await store.save()
     } else {
@@ -54,15 +52,30 @@ const tag = async (store_id, user_id, tags) => {
     }
 }
 
-const add_photo = (store_id, photo) => {
-
+const add_picture = async (store_id, user_id, photo) => {
+    const store = await get_by_id(store_id);
+    if (is_manager(store, user_id)) {
+        store.pictures.push(photo);
+        await store.save();
+    } else {
+        throw new Error('User is not a manager'); 
+    }
 }
 
-const is_manager = (store_id, user_id) => {
-
+const is_manager = (store, user_id) => {
+    return  store.managers.filter( valid_manager => valid_manager == user_id.toString()).length !== 0
 }
 
-const add_manager = (store_id, user_id) => {
+const add_manager = async (store_id, mananger_id, new_manager_id) => {
+    const store = await get_by_id(store_id);
+    if (is_manager(store, mananger_id)) {
+        if(!is_manager(store, new_manager_id)){
+            store.managers.push(new_manager_id.toString())
+            await store.save();
+        }
+    } else {
+        throw new Error('User is not a manager'); 
+    }
     
 }
 
@@ -76,7 +89,7 @@ module.exports = {
     get_by_name,
     patch,
     tag,
-    add_photo,
+    add_picture,
     is_manager, 
     add_manager,
     get_count

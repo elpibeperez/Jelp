@@ -1,15 +1,5 @@
 const mongoose = require('mongoose');
 var ObjectId = require('mongodb').ObjectId;
-//const Users = require('./users')
-/**
-tiendas
-id_tienda
-nombre
-descripcion
-rubro
-geoloc
-avatar
-*/
 
 const Stores = new mongoose.Schema({
     name: { type: String, required: true },
