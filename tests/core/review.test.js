@@ -56,4 +56,27 @@ describe('Review', () => {
             expect(review_by_id[0].title).toEqual(new_review.title);
         }
     );
+
+    it('can be patched by the reviewer',
+        async () => {
+            const {reviewer, new_store, new_review} = await create_reviewer_store_and_review();
+            const title = 'New title'
+            const patch = {"title": title};
+            await review.patch(reviewer['_id'], new_review['_id'], patch);
+            const updated_review = await review.get_by_id(new_review['_id']);
+            expect(updated_review).toBeTruthy();
+            expect(updated_review.title).toEqual(title);
+        }
+    );
+
+    it('can be deleted by the reviewer',
+        async () => {
+            const {reviewer, new_store, new_review} = await create_reviewer_store_and_review();
+            expect(new_review).toBeTruthy()
+            await review.delete_review(reviewer['_id'], new_review['_id'])
+            const deleted_review = await review.get_by_id(new_review['_id']);
+            expect(deleted_review).toBeFalsy();
+        }
+    );
+
 });

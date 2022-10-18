@@ -28,13 +28,28 @@ const get_by_store = async (store_id) => {
     
 } 
 
-const patch = (reviewer_id, review) => {
+const is_the_reviewer =  async (review, reviewer_id) => {
+    return model_utils.is_valid_object_id(reviewer_id) && review.reviewer.toString() == reviewer_id.toString()
+}
 
+const patch = async (reviewer_id, review_id, review_patch) => {
+    if (!model_utils.is_valid_object_id(review_id)) {
+        throw new Error('Invalid review ID Format');
+    }
+    const review = await get_by_id(review_id);
+    if (is_the_reviewer(review, reviewer_id)) {
+        await reviews_model.findByIdAndUpdate(review_id, review_patch);   
+    } else {
+        throw new Error('User is not the reviewer'); 
+    }
 }
 
 
-const delete_review = (reviewer_id, review_id) => {
-
+const delete_review = async (reviewer_id, review_id) => {
+    if (!model_utils.is_valid_object_id(reviewer_id)) {
+        throw new Error('User is not the reviewer');
+    }
+    await reviews_model.deleteOne({_id: review_id});
 }
 
 module.exports = {
