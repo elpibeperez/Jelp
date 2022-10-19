@@ -34,7 +34,7 @@ const create_user_two = async () => {
 describe('Store ', () => {
     it('can create a new store', async () => {
         await create_owner_and_store();
-        const store_count = await store.get_count(); 
+        const store_count = await store.get_count();
         expect(store_count).toEqual(1);
     });
 
@@ -67,7 +67,7 @@ describe('Store ', () => {
         expect(other_user).toBeTruthy();
         const patch_description = new_store.description + ' suffix';
         try{
-            await store.patch(new_store['_id'], other_user['_id'], {description: patch_description})
+            await store.patch(new_store['_id'], other_user['_id'], { description: patch_description });
         } catch (error) {
             expect(error.message).toBeTruthy();
             expect(error.message).toEqual('User is not a manager');
@@ -75,9 +75,9 @@ describe('Store ', () => {
     });
 
     it('can be tagged by a manager', async () => {
-        const {owner, new_store} = await create_owner_and_store();
+        const { owner, new_store } = await create_owner_and_store();
         expect(new_store).toBeTruthy();
-        const store_id = new_store['_id']
+        const store_id = new_store['_id'];
         const new_tag = 'tag';
         await store.tag(new_store['_id'], owner['_id'], new_tag);
         const tagged_store = await store.get_by_id(store_id);
@@ -99,9 +99,9 @@ describe('Store ', () => {
     });
 
     it('can add a new photo if is a manager', async () => {
-        const {owner, new_store} = await create_owner_and_store();
+        const { owner, new_store } = await create_owner_and_store();
         expect(new_store).toBeTruthy();
-        const new_photo = 'https://some.img/in/some/path.jpg'
+        const new_photo = 'https://some.img/in/some/path.jpg';
         await store.add_picture(new_store['_id'], owner['_id'], new_photo);
         const store_with_photo = await store.get_by_id(new_store['_id']);
         expect(store_with_photo.pictures).toBeTruthy();
