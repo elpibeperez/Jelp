@@ -4,8 +4,8 @@ const basic_store = {
     heading: 'Retails store',
     tags: ['Retail store', 'Testing'],
     logo: '/some/logo/file.jpg',
-}
+};
 
 module.exports = {
     basic_store,
-}
+};
