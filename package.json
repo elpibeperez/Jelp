@@ -6,9 +6,11 @@
   "scripts": {
     "test": "jest --runInBand --detectOpenHandles",
     "coverage": "jest --coverage --collectCoverageFrom=core/**/*.js --collectCoverageFrom=models/**/*.*",
-    "stryker": "stryker run",
-    "lint": "eslint core/** models/** tests/**",
-    "sonar": "sonar-scanner"
+    "stryker": "stryker run; jq -f mutation-report-to-sonar.jq reports/mutation/mutation.json > mutation-sonar.json",
+    "lint": "eslint core/** models/** tests/** -f json -o eslint_report.json",
+    "sonar": "sonar-scanner",
+    "start-sonar": "docker run --name sonarqube -d -p 9000:9000 -v $PWD/sonar-local/data:/data -v $PWD/sonar-local/temp:/temp -e SONAR_PATH_DATA=/data -e SONAR_PATH_TEMP=/temp sonarqube",
+    "stop-sonar": "docker stop sonarqube ; docker rm sonarqube"
   },
   "keywords": [],
   "author": "",
