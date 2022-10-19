@@ -37,7 +37,7 @@ describe('User ', () => {
         const user_data = test_data.basic_user;
         await user.new_user(user_data);
         const retreived_user_by_username = await user.get_by_username(user_data.username);
-        const retreived_user_by_id = await user.get_by_id(retreived_user_by_username['_id']);
+        const retreived_user_by_id = await user.get_by_id(retreived_user_by_username._id);
         expect(retreived_user_by_username).toEqual(retreived_user_by_id);
     });
 
@@ -55,7 +55,7 @@ describe('User ', () => {
         const user_data = test_data.basic_user;
         await user.new_user(user_data);
         const saved_user = await user.get_by_username(user_data.username);
-        const id = saved_user['_id'];
+        const id = saved_user._id;
         await user.delete_user(id);
         let deleted_user = await user.get_by_id(id);
         expect(deleted_user).toBeNull();

@@ -4,7 +4,7 @@ const user = require('./user');
 
 const create_store = async (user_id, store) => {
     const owner = await user.get_by_id(user_id);
-    store.managers = [owner['_id'].toString()];
+    store.managers = [owner._id.toString()];
     return stores_model.create(store);
 };
 

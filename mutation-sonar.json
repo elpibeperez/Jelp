@@ -1,0 +1,650 @@
+{
+  "issues": [
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 34,
+          "endLine": 36,
+          "startColumn": 52,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The StringLiteral was mutated to \"\" without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 35,
+          "endLine": 35,
+          "startColumn": 24,
+          "endColumn": 50
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 40,
+          "endLine": 42,
+          "startColumn": 11,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The StringLiteral was mutated to \"\" without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 41,
+          "endLine": 41,
+          "startColumn": 24,
+          "endColumn": 50
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 46,
+          "endLine": 48,
+          "startColumn": 54,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The StringLiteral was mutated to \"\" without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 47,
+          "endLine": 47,
+          "startColumn": 24,
+          "endColumn": 50
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 11,
+          "endLine": 11,
+          "startColumn": 8,
+          "endColumn": 49
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 12,
+          "endColumn": 18
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 21,
+          "endLine": 21,
+          "startColumn": 8,
+          "endColumn": 48
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ObjectLiteral was mutated to {} without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 22,
+          "endLine": 22,
+          "startColumn": 49,
+          "endColumn": 68
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 23,
+          "endLine": 23,
+          "startColumn": 12,
+          "endColumn": 19
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 31,
+          "startColumn": 55,
+          "endColumn": 60
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to false without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 31,
+          "startColumn": 55,
+          "endColumn": 60
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The LogicalOperator was mutated to model_utils.is_valid_object_id(reviewer_id) || review.reviewer.toString() === reviewer_id.toString() without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 31,
+          "startColumn": 55,
+          "endColumn": 60
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 7,
+          "endColumn": 60
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The EqualityOperator was mutated to review.reviewer.toString() !== reviewer_id.toString() without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 31,
+          "endLine": 31,
+          "startColumn": 7,
+          "endColumn": 60
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to false without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 34,
+          "endLine": 34,
+          "startColumn": 8,
+          "endColumn": 50
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 38,
+          "startColumn": 8,
+          "endColumn": 44
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to false without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 46,
+          "endLine": 46,
+          "startColumn": 8,
+          "endColumn": 52
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ObjectLiteral was mutated to {} without any tests failing.",
+        "filePath": "core/review.js",
+        "textRange": {
+          "startLine": 49,
+          "endLine": 49,
+          "startColumn": 34,
+          "endColumn": 52
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 58,
+          "endLine": 60,
+          "startColumn": 11,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The StringLiteral was mutated to \"\" without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 59,
+          "endLine": 59,
+          "startColumn": 24,
+          "endColumn": 47
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 70,
+          "endLine": 72,
+          "startColumn": 11,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantNoCoverage",
+      "primaryLocation": {
+        "message": "A mutant was not covered by any of the tests. The StringLiteral was mutated to \"\" without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 71,
+          "endLine": 71,
+          "startColumn": 24,
+          "endColumn": 47
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 13,
+          "endLine": 13,
+          "startColumn": 8,
+          "endColumn": 48
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 12,
+          "endColumn": 34
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ObjectLiteral was mutated to {} without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 24,
+          "endLine": 24,
+          "startColumn": 45,
+          "endColumn": 53
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The LogicalOperator was mutated to store || store.enabled without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 15,
+          "endLine": 15,
+          "startColumn": 12,
+          "endColumn": 34
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 25,
+          "endLine": 25,
+          "startColumn": 8,
+          "endColumn": 30
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The LogicalOperator was mutated to store || store.enabled without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 25,
+          "endLine": 25,
+          "startColumn": 8,
+          "endColumn": 30
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 36,
+          "endLine": 36,
+          "startColumn": 8,
+          "endColumn": 34
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 38,
+          "endLine": 40,
+          "startColumn": 11,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 45,
+          "endLine": 45,
+          "startColumn": 8,
+          "endColumn": 34
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The BlockStatement was mutated to {} without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 48,
+          "endLine": 50,
+          "startColumn": 11,
+          "endColumn": 5
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 55,
+          "endLine": 55,
+          "startColumn": 8,
+          "endColumn": 34
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 65,
+          "endLine": 65,
+          "startColumn": 8,
+          "endColumn": 38
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ConditionalExpression was mutated to true without any tests failing.",
+        "filePath": "core/store.js",
+        "textRange": {
+          "startLine": 66,
+          "endLine": 66,
+          "startColumn": 12,
+          "endColumn": 46
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    },
+    {
+      "engineId": "StrykerJS",
+      "ruleId": "MutantSurvived",
+      "primaryLocation": {
+        "message": "A mutant survived after running the tests. The ArrowFunction was mutated to () => undefined without any tests failing.",
+        "filePath": "core/user.js",
+        "textRange": {
+          "startLine": 30,
+          "endLine": 31,
+          "startColumn": 20,
+          "endColumn": 43
+        }
+      },
+      "type": "CODE_SMELL",
+      "severity": "MAJOR",
+      "effortMinutes": 10
+    }
+  ]
+}

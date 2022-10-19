@@ -13,6 +13,8 @@
     },
     "rules": {
         "camelcase": "off",
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "no-underscore-dangle": "off",
+        "no-param-reassign": "off"
     }
 }
