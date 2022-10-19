@@ -3,9 +3,9 @@ const review = require('../../core/review');
 const user = require('../../core/user');
 const store = require('../../core/store');
 const reply = require('../../core/reply');
-const test_data = require('./review.testdata')
+const test_data = require('./review.testdata');
 const user_data = require('./user.testdata');
-const store_data = require('./store.testdata')
+const store_data = require('./store.testdata');
 
 beforeAll(async () => {
     await dbHandler.connect()
