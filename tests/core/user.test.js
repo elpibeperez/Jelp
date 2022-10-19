@@ -1,10 +1,9 @@
-
 const dbHandler = require('../../models/InMemoryDbHandler');
 const user = require('../../core/user');
-const test_data = require('./user.testdata')
+const test_data = require('./user.testdata');
 
 beforeAll(async () => {
-    await dbHandler.connect()
+    await dbHandler.connect();
 });
 
 afterEach(async () => {
@@ -16,7 +15,7 @@ afterAll(async () => {
 });
 
 describe('User ', () => {
-    it('can create a new user',async () => {
+    it('can create a new user', async () => {
         const user_data = test_data.basic_user;
         await expect(async () => user.new_user(user_data).not.toThrow());
     });

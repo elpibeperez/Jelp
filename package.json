@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --runInBand --detectOpenHandles",
     "coverage": "jest --coverage --collectCoverageFrom=core/**/*.js --collectCoverageFrom=models/**/*.*",
-    "test:mutator": "stryker run"
+    "test:mutator": "stryker run",
+    "lint": "eslint core/** models/** tests/**"
   },
   "keywords": [],
   "author": "",
